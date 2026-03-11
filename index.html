@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            /* The image used */
+            background-image: url("images/intro.jpeg");
+            
+            /* Add the blur effect */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            
+            /* Full height */
+            height: 100%;
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h3> Hello, my name is</h3>
+        <h1>Sinchan Kumar S Y</h1>
+    </div>
+
+    
+    <section id="product" class="mt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center pt-3">
+                        <div class="card-img">
+                            <img src="images/zoo.png" class="img-fluid my-3" alt="" style="max-width: 200px; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h2>ZOO Management System</h2>
+                            <p class="card-text overflow-hidden" style="max-height: 100px; overflow: hidden;">A DBMS-based application that serves as a ticket booking system for visitors. It provides
+information about the zoo, including details of various animals and birds. Designed and
+implemented the database schema in MySQL for efficient data storage and retrieval.</p>
+                            <button type="button" name="button" class="btn btn-outline-secondary px-3"><a class="nav-link" href="./project.html">Read more</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card text-center pt-3">
+                        <div class="card-img">
+                            <img src="images/cnct.png" class="img-fluid my-3" alt="" style="max-width: 200px; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h3>Connectogram - a social media app for college</h3>
+                            <p class="card-text overflow-hidden" style="max-height: 100px; overflow: hidden;">Developed an android app using Java (backend) and Firebase (database) in Android Studio. Thisstudent-centered social platform enables multimedia sharing and a campus feed for updates
+and achievements within a single institution</p>
+                            <button type="button" name="button" class="btn btn-outline-secondary px-3"><a class="nav-link" href="./project.html">Read more</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center pt-3">
+                        <div class="card-img">
+                            <img src="images/ecart.png" class="img-fluid my-3" alt="" style="max-width: 200px; height: auto;">
+                        </div>
+                        <div class="card-body">
+                            <h3>QuickCart: E-Commerce Application</h3>
+                            <p class="card-text overflow-hidden" style="max-height: 100px; overflow: hidden;">Developed a scalable e-commerce platform with seamless user registration, product browsing, cart management, order placement, and Razorpay payment integration. Designed a normalized database schema for optimal data management and integrity. Implemented microservices architecture using Java, Spring Boot, and JPA, ensuring modularity and scalability.</p>
+                            <button type="button" name="button" class="btn btn-outline-secondary px-3"><a class="nav-link" href="./project.html">Read more</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+  
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <link rel="stylesheet" href="abt.css">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/primary.jpg" alt="Rotary" class="d-block w-100" height="auto">
+                <div class="carousel-caption">
+                    <h3>Goverment Middle Primary School Madikeri</h3>
+                    <p>Primary[1-7] (2008-2015)</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/high.jpg" alt="St. Joseph" class="d-block w-100" height="auto">
+                <div class="carousel-caption">
+                    <h3>Aruna Pre University College Madikeri</h3>
+                    <p>Higher primary [8th to 2nd PU] (2016-2020)</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="images/kvg.jpg" alt="KVGCE" class="d-block w-100" height="auto">
+                <div class="carousel-caption">
+                    <h3>KVG College Of Engineering Sullia</h3>
+                    <p>Computer Science & Engineering (2020-2024)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <h1>Get to know me!!</h1>
+        <br>
+        <h5>Im Sinchan completed my Bachelors of Engineering  in Computer Science and Engineering at KVGCE. Now I am working at Nimblix Technologies as a Software Developer.</h5>
+        <div class="container mt-3">    
+        </div>
+    </div>
+    <h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <img src="images/photo.jpg" alt="John" style="height:250px; width:250px; display:block; margin:auto; margin-top:20px;">
+  <h2>Sinchan Kumar S Y</h2>
+  <p class="title">Software Developer</p>
+  <p>Nimblix Technologies</p>
+</div>
+<br><br>
+<br><br>
+
+    <div class="container">
+        <link rel="stylesheet" href="contact.css">
+        <div style="text-align:center">
+            <h2>Contact Me</h2>
+            <p>Write a message:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="contact.html" style="text-decoration:none; font-size:30px; font-weight:bold;">
+  <span style="opacity:0; display:inline-block; animation:fade 1s forwards; animation-delay:0s;">C</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.1s;">l</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.2s;">i</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.3s;">c</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.4s;">k</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.5s;"> </span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.6s;">H</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.7s;">e</span>
+<span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.8s;">r</span>
+  <span style="opacity:0; display:inline-block; animation:fade 0.5s forwards; animation-delay:0.9s;">e</span>
+</a>
+
+<style>
+@keyframes fade{
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+</style>
+            </div>
+            <div class="column">
+                <form>
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="  ">
+                    <br><br>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
